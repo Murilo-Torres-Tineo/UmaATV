@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu conteudo"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: #0000FF;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #008000;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+
+.card:nth-child(1) {background-color: #FF0000; color: #FFFFFF;}
+.card:nth-child(2) {background-color: #FFA500; color: #000000; }
+.card:nth-child(3) {background-color: #FFFF00; color: #000000; }
+.card:nth-child(4) {background-color: #800080; color: #FFFFFF; }
+.card:nth-child(5) {background-color: #00FFFF; color: #000000; }
+.card:nth-child(6) {background-color: #808080; color: #FFFFFF; }
